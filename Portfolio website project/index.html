@@ -1,0 +1,136 @@
+<!-- exercise 2 
+    button "Home" that alerts a message
+    button "Theme" that toggles javascript funcion to change website theme 
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body id="body">
+
+    <!-- navigation bar -->
+
+    <nav class="top-navigation">
+        <ul>
+            <li><button id = "homeButton" class="topnavbutton" role="button" onclick="Home()">Home</a></button></li>
+            <li><button class="topnavbutton" role="button"><a href="#about">About</a></button></li>
+            <li><button class="topnavbutton" role="button"><a href="#portfolio">Portfolio</a></button></li>
+            <li><button class="topnavbutton" role="button" onclick="toggleTheme()">Theme</button></li>
+        </ul>
+    </nav>
+
+    <!-- adding a hero header -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, it's me Joao Alencar</h2>
+                    <p class="hero_desc">I am a Junior Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- adding main content section -->
+    <main>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Here, you can find my latest works and skills in web development.</p>
+            <button>View Portfolio</button>
+        </div>
+    </main>
+
+    <!-- adding about me section -->
+    <main class="grid-container">
+        <section class="section" id="about">
+            <div class="container">
+                <img src="./assets/2.png" alt="My Profile Picture">
+                <h2>About Me</h2>
+                <p>I am a web developer .....................</p>
+                <!-- buttons that direct to my github and facebook pages, added styling class in css file -->
+                <a href="https://github.com/joaopedrocalencar"><button class="button1">My GitHub</button></a>
+            </div>
+        </section>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=XjvqUZzPcMADLut5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <!-- table showing education, added styling class in css file -->
+        <div class="grid-container">
+            <div class="column-container">
+                <div class="column1">
+                    <section class="section" id="education">
+                        <h2>Education</h2>
+                        <table class="table-style">
+                            <tr>
+                                <td>Web Design and Development certificate - Humber College, Canada</td>
+                                <td>2023-Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>Javascript Course 2023 - Udemy</td>
+                                <td>2023-Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>Postgraduate in Civil Law and Civil Procedure</td>
+                                <td>2021-2021</td>
+                            </tr>
+                            <tr>
+                                <td>Bachelor degree in Laws - Federal University of Maranhao, Brazil</td>
+                                <td>2016-2021</td>
+                            </tr>
+                        </table>
+                </div>
+
+
+<!-- iframe embed a map with the location of an aspiration of location to work.
+iframe wraped in a container div with the class googlemap (class added in css file) 
+to make the map scale responsive with the size of the browser -->
+
+
+<div class="googlemap">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d339933.00618669944!2d-122.47846341731989!3d37.66779391316938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sS%C3%A3o%20Francisco%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sca!4v1695349062881!5m2!1spt-BR!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+</div>
+</body>
+
+<!-- adding portfolio section -->
+
+<section id="portfolio">
+  <div class="container">
+    <h1>Where to find me?</h1>
+    <h2>My Portfolio</h2>
+    <div class="portfolio-content">
+      <img src="C:\Users\maria\Documents\Joao Project\coming soon.png" alt="My Profile Picture" class="portfolio-image">
+      <!-- add portfolio items here -->
+    </div> 
+  </div>
+</section>
+
+<!-- adding a contact section -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form action="">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+   
+
+</html>
